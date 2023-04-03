@@ -9,10 +9,10 @@ with
             campaign_name,
             adset_name,
             ad_name,
-            clicks,
-            inline_link_clicks,
+            spend,
             impressions,
-            spend
+            clicks,
+            inline_link_clicks as link_clicks
         from {{ ref("stg_fb__custom_facebook") }}
 
     )
