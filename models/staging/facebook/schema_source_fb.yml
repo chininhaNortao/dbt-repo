@@ -6,3 +6,4 @@ sources:
     schema: facebook_ads
     tables:
       - name: custom_facebook_ads
+      - name: fivetran_audit
