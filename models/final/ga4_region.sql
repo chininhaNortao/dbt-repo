@@ -5,7 +5,7 @@ with
 
         select
             *
-        from {{ ref("stg_ga__city") }}
+        from {{ ref("stg_ga__region") }}
 
     )
 

@@ -5,8 +5,9 @@ sources:
     database: 'cn-analytics-project'
     schema: google_analytics_4
     tables:
-      - name: ga_4_dm_city
+      - name: ga_4_dm_region
       - name: ga_4_eng_events
       - name: ga_4_tec_platform_device
       - name: ga_4_tr_session_source_medium
       - name: ga_4_us_user_source_medium
+      - name: fivetran_audit
