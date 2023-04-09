@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 with facebook_ads as (
 
     SELECT 
