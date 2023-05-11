@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_fb__custom_facebook
+    columns:
+      - name: spend
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
+  - name: stg_fb__fivetran_audit
+    columns:
+      - name: last_time_synced
+        tests:
+          - not_null
+              
+    

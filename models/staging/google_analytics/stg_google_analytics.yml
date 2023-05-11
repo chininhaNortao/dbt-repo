@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_ga__session_source_medium
+    columns:
+      - name: session_source
+        tests:
+          - not_null
+  - name: stg_ga__fivetran_audit
+    columns:
+      - name: last_time_synced
+        tests:
+          - not_null
