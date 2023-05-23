@@ -14,6 +14,15 @@ google_analytics_4 as (
     FROM
         {{ ref('stg_ga__fivetran_audit') }}
 
+),
+
+google_sheets as (
+
+    SELECT
+        *
+    FROM
+        {{ ref('stg_gs__fivetran_audit') }}
+
 )
 
 SELECT 
@@ -25,3 +34,8 @@ SELECT
     *    
 FROM
     google_analytics_4
+UNION ALL
+SELECT
+    *    
+FROM
+    google_sheets

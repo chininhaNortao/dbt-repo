@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: google_sheets
+    database: 'cn-analytics-project'
+    schema: google_sheets_recruit
+    tables:
+      - name: recruit_lead
+      - name: recruit_opportunities
+      - name: fivetran_audit
