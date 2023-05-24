@@ -1,0 +1,5 @@
+version: 2
+
+analyses:
+  - name: modeling_recruit_sheets_to_sankey
+    description: query to create a modeled table to be used in a sankey visual, thinking to be tested in bigquery.
