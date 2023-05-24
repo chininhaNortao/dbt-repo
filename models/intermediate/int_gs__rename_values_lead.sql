@@ -11,8 +11,8 @@ with
             empresa,
             vaga,
             case
-                when resposta is true then 'Interacted'
-                else 'No Response'
+                when resposta is true then 'Responded'
+                else 'Ghosts'
             end as resposta,
         from {{ ref("stg_gs__lead") }}
 

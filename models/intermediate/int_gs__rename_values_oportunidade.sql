@@ -10,8 +10,9 @@ with
             vaga,
             empresa,
             case
-                when fechou is true then empresa
-                else '...'
+                when fechou is true then 'Hired'
+                when vaga_cancelada is true then 'Canceled/Paused job opening'
+                else 'Rejection'
             end as fechou
         from {{ ref("stg_gs__oportunidade") }}
 

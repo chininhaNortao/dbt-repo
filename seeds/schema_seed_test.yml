@@ -1,0 +1,10 @@
+version: 2
+
+seeds:
+  - name: seed_test
+    description: A mock data to test seed function
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null

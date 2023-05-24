@@ -14,6 +14,7 @@ final as (
         data_2_entrevista,
         vaga,
         empresa,
+        cancelada as vaga_cancelada,
         fechou
     from
         base
